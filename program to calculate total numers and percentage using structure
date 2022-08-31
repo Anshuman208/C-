@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+struct student {
+	char name[10];
+	int rollnumber ;
+	int sub1 ;
+	int sub2 ;
+	int sub3 ;
+	int total ;
+	double percentage ;
+};
+int main()
+{
+	student s1;
+	cout<<"Enter the name: ";
+    cin>>s1.name;
+    cout<<"Enter the rollnumber; ";
+    cin>>s1.rollnumber;
+    cout<<"Enter the sub1: ";
+    cin>>s1.sub1;
+    cout<<"Enter the sub2: ";
+    cin>>s1.sub2;
+    cout<<"Enter the sub3: ";
+    cin>>s1.sub3;
+    s1.total=s1.sub1+s1.sub1+s1.sub3;
+    s1.percentage=s1.total/3;
+    cout<<"\n total marks=  "<<s1.total;
+    cout<<"\n marks in percentage= "<<s1.percentage;
+    return 0;
+}
